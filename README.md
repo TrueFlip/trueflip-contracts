@@ -444,34 +444,7 @@
           "type": "uint256"
         }
       ],
-      "name": "DashboardInvestmentReceived",
-      "type": "event"
-    },
-    {
-      "anonymous": false,
-      "inputs": [
-        {
-          "indexed": false,
-          "name": "satoshi",
-          "type": "uint256"
-        },
-        {
-          "indexed": false,
-          "name": "issuedTo",
-          "type": "address"
-        },
-        {
-          "indexed": false,
-          "name": "tokens",
-          "type": "uint256"
-        },
-        {
-          "indexed": false,
-          "name": "bonus",
-          "type": "uint256"
-        }
-      ],
-      "name": "InvestmentReceived",
+      "name": "Investment",
       "type": "event"
     },
     {
@@ -504,12 +477,7 @@
           "name": "potential",
           "type": "address"
         }
-      ],
-      "name": "NewPotentialOwner",
-      "type": "event"
-    }
-  ]
-
+      ]
 ## Token ABI
 
 [
