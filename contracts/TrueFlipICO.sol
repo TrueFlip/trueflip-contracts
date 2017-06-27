@@ -80,6 +80,8 @@ contract TrueFlipICO is SafeMath, Owned {
     }
 
     function setExchangeRate(uint rate)
+        public
+        onlyOwner
     {
         // If the rate is below or equal zero, throw
         require(rate > 0);
