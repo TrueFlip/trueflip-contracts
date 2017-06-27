@@ -54,10 +54,8 @@ contract TrueFlipICO is SafeMath, Owned {
       _;
     }
 
-    //Events
-    event DashboardInvestmentReceived(uint satoshi, address issuedTo, uint tokens, uint bonus, string investor, uint investmentId);
-
-    event InvestmentReceived(uint satoshi, address issuedTo, uint tokens, uint bonus);
+    //Event
+    event Investment(uint satoshi, address issuedTo, uint tokens, uint bonus, string investor, uint investmentId);
 
     /// @dev Returns bonus for the specific moment
     function getBonus()
@@ -112,8 +110,7 @@ contract TrueFlipICO is SafeMath, Owned {
         uint tokenCount = calculateTokens(investmentInSatoshi);
         require(token.mint(beneficiary, tokenCount, transfer));
 
-        DashboardInvestmentReceived(investmentInSatoshi, beneficiary, tokenCount, getBonus(), investorId, investmentId);
-        InvestmentReceived(investmentInSatoshi, beneficiary, tokenCount, getBonus());
+        Investment(investmentInSatoshi, beneficiary, tokenCount, getBonus(), investorId, investmentId);
 
         incrementCounters(investmentInSatoshi, tokenCount);
     }
