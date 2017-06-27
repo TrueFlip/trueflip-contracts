@@ -477,7 +477,13 @@
           "name": "potential",
           "type": "address"
         }
-      ]
+      ],
+      "name": "NewPotentialOwner",
+      "type": "event"
+    }
+  ]
+
+
 ## Token ABI
 
 [
