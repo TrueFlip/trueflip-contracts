@@ -57,6 +57,7 @@ contract TrueFlipToken is StandardToken, SafeMath, Owned {
     }
 
     function mint(address beneficiary, uint amount, bool transfer)
+        external
         onlyMint
         returns (bool success)
     {
@@ -75,6 +76,7 @@ contract TrueFlipToken is StandardToken, SafeMath, Owned {
     }
 
     function finalize()
+        public
         onlyMint
         returns (bool success)
     {
@@ -83,12 +85,14 @@ contract TrueFlipToken is StandardToken, SafeMath, Owned {
     }
 
     function requestWithdrawal(address beneficiary, uint amount)
+        public
         onlyOwner
     {
         allowed[mintedTokens][beneficiary] = amount;
     }
 
     function withdrawTokens()
+        public
     {
         transferFrom(mintedTokens, msg.sender, allowance(mintAddress, msg.sender));
     }

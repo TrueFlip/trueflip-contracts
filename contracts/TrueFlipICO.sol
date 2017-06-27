@@ -169,8 +169,8 @@ contract TrueFlipICO is SafeMath, Owned {
     /// @notice Finalize ICO
     /// @dev Required state: Success
     function finalizeICO()
+      public
       onlyOwner
-      external
     {
         require(!isActive());
         require(block.number >= startBlock);
