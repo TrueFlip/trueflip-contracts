@@ -94,6 +94,6 @@ contract TrueFlipToken is StandardToken, SafeMath, Owned {
     function withdrawTokens()
         public
     {
-        transferFrom(mintedTokens, msg.sender, allowance(mintAddress, msg.sender));
+        transferFrom(mintedTokens, msg.sender, allowance(mintedTokens, msg.sender));
     }
 }
