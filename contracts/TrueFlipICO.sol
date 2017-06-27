@@ -129,7 +129,7 @@ contract TrueFlipICO is SafeMath, Owned {
     /// @param investment Invested amount in Satoshi
     /// @param tokenCount Number of tokens issued
     function incrementCounters(uint investment, uint tokenCount)
-        internal
+        private
     {
       // Update collected satoshi.
       satoshiCollected = add(satoshiCollected, investment);

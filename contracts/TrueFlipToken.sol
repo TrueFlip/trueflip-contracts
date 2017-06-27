@@ -57,7 +57,7 @@ contract TrueFlipToken is StandardToken, SafeMath, Owned {
     }
 
     function mint(address beneficiary, uint amount, bool transfer)
-        external
+        public
         onlyMint
         returns (bool success)
     {
