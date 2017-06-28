@@ -30,7 +30,7 @@ contract TrueFlipICO is SafeMath, Owned {
         Contract consts
     */
     uint public constant tokensPerSatoshi = 2000;
-    uint public constant targetSatoshi = 612500000000;
+    uint public constant targetSatoshi = 6125 * 10 ** 8;
     uint public constant teamPercentOfTotal = 20;
     uint public constant advisoryPercentOfTotal = 10;
     uint public constant maxICOIssuance = 13650000 * 10 ** 8;
