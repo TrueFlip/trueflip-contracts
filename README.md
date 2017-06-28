@@ -1,5 +1,11 @@
 # TrueFlip Smart Contracts
 
+## Etherscan
+
+Token address: [0xa7f976C360ebBeD4465c2855684D1AAE5271eFa9](https://etherscan.io/address/0xa7f976C360ebBeD4465c2855684D1AAE5271eFa9)
+
+ICO address: [0x56de36FCD949cbbCb1B511e4C125f452e0162947](https://etherscan.io/address/0x56de36fcd949cbbcb1b511e4c125f452e0162947)
+
 ## Installation
 1. Install [Yarn](https://yarnpkg.com/lang/en/docs/install/)
 2. Run `yarn upgrade`
@@ -10,9 +16,9 @@
 3. `yarn truffle test` - run tests
 4. Restart testrpc before running each tests again.
 
-##ICO ABI
+## ICO contract ABI
 
-[
+`[
     {
       "constant": true,
       "inputs": [],
@@ -481,11 +487,11 @@
       "name": "NewPotentialOwner",
       "type": "event"
     }
-  ]
+  ]`
 
-## Token ABI
+## Token contract ABI
 
-[
+`[
     {
       "constant": true,
       "inputs": [],
@@ -934,4 +940,4 @@
       "name": "Issuance",
       "type": "event"
     }
-  ]
+  ]`
