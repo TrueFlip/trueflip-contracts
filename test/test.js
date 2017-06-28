@@ -73,7 +73,7 @@ contract('TrueFlipICO', function(accounts) {
 
           // This transaction should trigger InvestmentReceived event.
           for (var log in result.logs) {
-            if (log.event == "InvestmentReceived") {
+            if (log.event == "Investment") {
               assert.equal(log.args.satoshi, investedSatoshis,
                   "Invalid satoshi number");
             }

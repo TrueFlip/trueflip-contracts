@@ -5,7 +5,7 @@ const startBlock = 0;
 // End block of the ICO
 const endBlock = 200000;
 const satoshiPerEther = 12014999;
-const tokensPerSatoshi = 2228;
+const tokensPerSatoshi = 2000;
 const gasAmount = 4000000;
 // Address of the owner of the ICO.
 const owner = "0xaec3ae5d2be00bfc91597d7a1b2c43818d84396a";
