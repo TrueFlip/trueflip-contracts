@@ -1,5 +1,8 @@
 # TrueFlip Smart Contracts
 
+### Created by Zerion
+![Zerion](https://lh4.googleusercontent.com/ca_P3IikD5V4GaiPQRBGm5JebOefwxg-BebK3dSnyd7ywM29hAo2RBn64CjPemb5V5OCXEM4xH94O9U=w3360-h1898)
+
 ## Installation
 1. Install [Yarn](https://yarnpkg.com/lang/en/docs/install/)
 2. Run `yarn upgrade`
