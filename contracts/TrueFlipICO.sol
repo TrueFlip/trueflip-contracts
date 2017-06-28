@@ -26,11 +26,10 @@ contract TrueFlipICO is SafeMath, Owned {
     uint public startBlock;
     uint public endBlock; //calculates from startBlock
 
-
     /*
         Contract consts
     */
-    uint public constant tokensPerSatoshi = 2228;
+    uint public constant tokensPerSatoshi = 2000;
     uint public constant targetSatoshi = 612500000000;
     uint public constant teamPercentOfTotal = 20;
     uint public constant advisoryPercentOfTotal = 10;
