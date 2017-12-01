@@ -18,7 +18,8 @@ ICO address: [0x56de36FCD949cbbCb1B511e4C125f452e0162947](https://etherscan.io/a
 
 ## ICO contract ABI
 
-`[
+```
+[
     {
       "constant": true,
       "inputs": [],
@@ -940,4 +941,5 @@ ICO address: [0x56de36FCD949cbbCb1B511e4C125f452e0162947](https://etherscan.io/a
       "name": "Issuance",
       "type": "event"
     }
-  ]`
+  ]
+  ```
